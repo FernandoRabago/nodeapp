@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Seguimiento de Ventas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Seguimiento de Ventas</h1>
+    </header>
+
+    <div class="container">
+        <section class="cotizacion-section">
+            <h2>Crear Cotización</h2>
+            <form id="form-cotizacion">
+                <div class="form-group">
+                    <label for="producto">Producto:</label>
+                    <select id="producto" name="producto" required>
+                        <option value="">Selecciona un producto</option>
+                        <option value="libro_harry_potter">Libro de Harry Potter</option>
+                        <option value="laptop">Laptop</option>
+                        <option value="cafetera">Cafetera</option>
+                        <option value="licuadora">Licuadora</option>
+                        <option value="bicicleta">Bicicleta</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="precio">Precio:</label>
+                    <input type="number" id="precio" name="precio" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cliente">Cliente:</label>
+                    <input type="text" id="cliente" name="cliente" required>
+                </div>
+
+                <button type="submit" class="btn">Crear Cotización</button>
+            </form>
+        </section>
+
+        <section class="productos-section">
+            <h2>Productos en Seguimiento</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cliente</th>
+                        <th>Días Abierta</th>
+                        <th>Vendedor</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+
+                    
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <footer>
+        <p>Proyecto arquitectura en la nube</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
